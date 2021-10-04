@@ -13,10 +13,10 @@ let newDate = d.getDate()+'/'+ (d.getMonth()+1)+'/'+ d.getFullYear();
 /* callback functions  */
 
 //location-based requests
-/* const locateMe = async() => {
+const locateMe = async() => {
     console.log('initialized');
     let geo = navigator.geolocation; 
-    const pos =  await geo.getCurrentPosition((position) => { return position.coords; });
+    const pos =  await geo.getCurrentPosition(async(position) => { return position.coords; });
     console.log(pos);
      
    
@@ -24,7 +24,7 @@ let newDate = d.getDate()+'/'+ (d.getMonth()+1)+'/'+ d.getFullYear();
      
 };
 
-locateMe(); */
+await locateMe();
 
 
 //zip-based requests
