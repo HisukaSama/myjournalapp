@@ -14,16 +14,18 @@ let newDate = d.getDate()+'/'+ (d.getMonth()+1)+'/'+ d.getFullYear();
 
 //location-based requests
 /* const locateMe = async() => {
-    let geo = navigator.geolocation 
-    geo.getCurrentPosition( position => {
-    console.log(`latitude is ${position.coords.latitude}, longitude is ${position.coords.longitude}`);
-    const res = await fetch(myURL+`/locate-me/lat=${position.coords.latitude}/lon=${position.coords.longitude}`);
-    const data =  await res.json()
-    });   
+    console.log('initialized');
+    let geo = navigator.geolocation; 
+    const pos =  await geo.getCurrentPosition((position) => { return position.coords; });
+    console.log(pos);
+     
    
         
      
-}; */
+};
+
+locateMe(); */
+
 
 //zip-based requests
 
