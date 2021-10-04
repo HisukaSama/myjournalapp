@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Journal App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <h1> Weather Journal</h1>
+    </nav>
+    <section>
+        <input type="number"  id='zip' placeholder="Enter your ZIP code here!">
+    </section>
+    <section>
+        <p class="subtitle">or get the weather automatically using your location by default</p>
+        <!-- <button id='locate-me'>get weather using my location</button>   -->     
+    </section>
+    <section>
+        <textarea class= "myInput" id="feelings" placeholder="How are you feeling today?" rows="3" cols="60"></textarea>
+       
+    </section>
+    <section>
+        <p id="error">this is an error</p>
+    </section>
+    <button id='generate'>Generate</button>
+        
+    <section>
+        <h2> Most Recent Entry</h2>
+        <div class="holder-entry">
+            <div id='entryHolder'>
+                <div id='date'>date</div>
+                <img src="" alt="weather" id='w_img'>
+                <div id="temp"> temp</div>
+                <div id="content">content</div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
